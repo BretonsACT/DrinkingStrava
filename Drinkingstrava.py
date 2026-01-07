@@ -44,18 +44,18 @@ st.subheader("📱 Actividad Reciente")
 # Consultamos los datos de la base de datos
 #data = conn.query("*", table="drinks", ttl="0").execute()
 
-if data.data:
-    for row in reversed(data.data):
-        with st.container(border=True):
-            col1, col2 = st.columns([1, 2])
-            with col1:
-                if row['image_url']:
-                    st.image(row['image_url'])
-                else:
-                    st.write("🍷 Sin foto")
-            with col2:
-                st.write(f"**{row['user_name']}** está bebiendo **{row['drink_name']}**")
-                st.write(f"🔥 {row['alcohol_pct']}% de alcohol")
+#if data.data:
+    #for row in reversed(data.data):
+        #with st.container(border=True):
+            #col1, col2 = st.columns([1, 2])
+            #with col1:
+                #if row['image_url']:
+                    #st.image(row['image_url'])
+                #else:
+                    #st.write("🍷 Sin foto")
+            #with col2:
+                #st.write(f"**{row['user_name']}** está bebiendo **{row['drink_name']}**")
+                #st.write(f"🔥 {row['alcohol_pct']}% de alcohol")
                 
                 # Botón de Kudos funcional
                 if st.button(f"🙌 Kudos ({row['kudos']})", key=f"k_{row['id']}"):
