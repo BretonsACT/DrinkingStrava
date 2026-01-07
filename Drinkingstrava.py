@@ -1,6 +1,6 @@
 import streamlit as st
 #from supabase import create_client, Client
-from st_supabase_connection import SupabaseConnection
+#from st_supabase_connection import SupabaseConnection
 
 # 1. Inicializar conexión
 # Usamos el conector oficial de Streamlit para Supabase
