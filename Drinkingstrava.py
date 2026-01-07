@@ -42,7 +42,7 @@ with st.expander("➕ Registrar lo que estoy bebiendo"):
 # --- FEED SOCIAL REAL ---
 st.subheader("📱 Actividad Reciente")
 # Consultamos los datos de la base de datos
-data = conn.query("*", table="drinks", ttl="0").execute()
+#data = conn.query("*", table="drinks", ttl="0").execute()
 
 if data.data:
     for row in reversed(data.data):
