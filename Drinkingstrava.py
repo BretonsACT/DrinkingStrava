@@ -58,6 +58,6 @@ st.subheader("📱 Actividad Reciente")
                 #st.write(f"🔥 {row['alcohol_pct']}% de alcohol")
                 
                 # Botón de Kudos funcional
-                if st.button(f"🙌 Kudos ({row['kudos']})", key=f"k_{row['id']}"):
-                   conn.table("drinks").update({"kudos": row['kudos'] + 1}).eq("id", row['id']).execute()
-                   st.rerun()
+                #if st.button(f"🙌 Kudos ({row['kudos']})", key=f"k_{row['id']}"):
+                   #conn.table("drinks").update({"kudos": row['kudos'] + 1}).eq("id", row['id']).execute()
+                   #st.rerun()
